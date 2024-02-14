@@ -8,6 +8,9 @@
   - name: Get whoami information
     ansible.windows.win_whoami:
 
+  - name: Get disk facts
+    community.windows.win_disk_facts:
+
   - name: Add a PowerShell module  
     community.windows.win_psmodule:    
       name: SQLServerDsc    
