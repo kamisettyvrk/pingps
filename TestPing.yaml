@@ -10,4 +10,4 @@
   - name: Add a PowerShell module  
     community.windows.win_psmodule:    
       name: dbatools    
-      state: absent
+      state: present
