@@ -11,3 +11,4 @@
     community.windows.win_psmodule:    
       name: dbatools    
       state: present
+      accept_license: true
