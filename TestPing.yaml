@@ -1,0 +1,13 @@
+- name: Ping
+  hosts: all
+ 
+  tasks:
+  - name: ping
+    win_ping:
+  - name: Get whoami information
+    ansible.windows.win_whoami:
+
+  - name: Add a PowerShell module  
+    community.windows.win_psmodule:    
+      name: PowerShellModule    
+      state: absent
