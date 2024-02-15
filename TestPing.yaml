@@ -10,7 +10,8 @@
 
   - name: Remove dba tools
     community.windows.win_psmodule:
-    state: absent
+      name: dbatools
+      state: absent
 
   - name: Get info about all modules on the system
     community.windows.win_psmodule_info:
