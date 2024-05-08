@@ -2,8 +2,8 @@
   hosts: all
  
   tasks:
-  - name: ping
-    ansible.windows.win_ping:
+  #- name: ping
+  #  ansible.windows.win_ping:
 
   - name: Get whoami information
     ansible.windows.win_whoami:
