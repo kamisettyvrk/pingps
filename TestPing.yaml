@@ -5,13 +5,16 @@
   #- name: ping
   #  ansible.windows.win_ping:
 
-  - name: Get whoami information
-    ansible.windows.win_whoami:
+ # - name: Get whoami information
+ #   ansible.windows.win_whoami:
 
-  - name: Run multi-lined shell commands
-    ansible.windows.win_shell: |
+ # - name: Run multi-lined shell commands
+  #  ansible.windows.win_shell: |
          ipconfig
 
+  - name: Get product id and product key
+    community.windows.win_product_facts:
+    
   - name: Remove dba tools
     community.windows.win_psmodule:
       name: dbatools
