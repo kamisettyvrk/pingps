@@ -8,6 +8,10 @@
   - name: Get whoami information
     ansible.windows.win_whoami:
 
+  - name: Run multi-lined shell commands
+    ansible.windows.win_shell: |
+         ipconfig
+
   - name: Remove dba tools
     community.windows.win_psmodule:
       name: dbatools
