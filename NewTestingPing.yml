@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Ping Windows hosts
-      win_ping:
+      win_shell: ipconfig
 
     - name: Ping Windows hosts1
       win_ping:
