@@ -12,8 +12,8 @@
   #  ansible.windows.win_shell: |
      #    ipconfig
 
-  - name: Get product id and product key
-    community.windows.win_product_facts:
+ # - name: Get product id and product key
+ #   community.windows.win_product_facts:
     
   - name: Remove dba tools
     community.windows.win_psmodule:
