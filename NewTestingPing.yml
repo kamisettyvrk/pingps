@@ -3,3 +3,6 @@
   tasks:
     - name: Ping Windows hosts
       win_ping:
+
+    - name: Ping Windows hosts1
+      win_ping:
