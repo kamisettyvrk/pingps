@@ -22,3 +22,10 @@
 
   - name: Get info about all modules on the system
     community.windows.win_psmodule_info:
+
+  - name: Run multi-lined shell commands
+    ansible.windows.win_shell: |
+      ipconfig
+
+  - name: Getting Ip
+    win_ping:
