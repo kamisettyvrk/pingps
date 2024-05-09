@@ -3,4 +3,6 @@
  
   tasks:
   - name: ping
-    win_ping:
+    ansible.builtin.shell: | 
+      ipconfig
+    
