@@ -1,6 +1,16 @@
 - name: Ping Windows hosts
   hosts: all
   tasks:
+
+    - name: Run PowerShell command
+      win_shell: |
+        Get-Service
+      register: powershell_output
+
+    - name: Print PowerShell command output
+      debug:
+        msg: "{{ powershell_output.stdout }}"
+        
     - name: Ping Windows hosts
       win_shell: ipconfig
 
