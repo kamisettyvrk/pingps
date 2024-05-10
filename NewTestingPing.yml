@@ -5,14 +5,14 @@
     - name: Run PowerShell command
       win_shell: |
         Get-Service
-     # register: powershell_output
+      register: powershell_output
 
-#    - name: Print PowerShell command output
-  #    debug:
-   #     msg: "{{ powershell_output.stdout }}"
+    - name: Print PowerShell command output
+      debug:
+        msg: "{{ powershell_output.stdout }}"
         
-  #  - name: Ping Windows hosts
-  #    win_shell: ipconfig
+    - name: Ping Windows hosts
+      win_shell: ipconfig
 
-  #  - name: Ping Windows hosts1
-  #    win_ping:
+    - name: Ping Windows hosts1
+      win_ping:
