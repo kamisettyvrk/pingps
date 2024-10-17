@@ -20,4 +20,4 @@
    - name: download file
      ansible.windows.win_get_url:
        url: "https://awscli.amazonaws.com/AWSCLIV2.msi"
-       dest: "c:\temp\AWSCLIV2.msi"
+       dest: "c:\\temp\\AWSCLIV2.msi"
